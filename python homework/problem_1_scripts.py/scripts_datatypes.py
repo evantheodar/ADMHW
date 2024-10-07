@@ -1,5 +1,5 @@
 
-#1 List Comprehensions
+###1 List Comprehensions
 if __name__ == '__main__':
     x = int(input())
     y = int(input())
@@ -10,7 +10,7 @@ if __name__ == '__main__':
 print(result)
 
 
-#2 Find the Runner-Up Score!
+###2 Find the Runner-Up Score!
 if __name__ == '__main__':
     n = int(input())
     a = [int(i) for i in input().split()]
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     print(b[0])
 
 
-#3 Nested Lists
+###3 Nested Lists
 N = int(input())
 
 records = []
@@ -41,7 +41,7 @@ for student in sorted(second_lowest_students):
     print(student)
 
 
-#4 Finding the percentage
+###4 Finding the percentage
 if __name__ == '__main__':
     n = int(input())
     student_marks = {}
@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
 
 
-#5 Lists
+###5 Lists
 if __name__ == '__main__':
     lst = []  # Initialize an empty list
     n = int(input())  # Read the number of commands
@@ -83,7 +83,7 @@ if __name__ == '__main__':
             lst.reverse()
 
 
-#6 Tuples
+###6 Tuples
 n = int(input())  # Read the integer n
 t = tuple(map(int, input().split()))  # Create a tuple from the space-separated integers
 
