@@ -1,6 +1,6 @@
 
 
-# 1 Capitalize!
+###1 Capitalize!
 ef solve(s):
     # Use the title() function to capitalize the first letter of each word
     capitalized_string = s.title()
@@ -18,19 +18,19 @@ if __name__ == '__main__':
     fptr.close()
 
 
-#2 sWAP cASE
+###2 sWAP cASE
 def swap_case(s):
     return s.swapcase()
 
 
-#3 String Split and Join
+###3 String Split and Join
 def split_and_join(l):
     a=l.split(" ")
     a="-".join(a)
     return a
     
 
-#4 What's Your Name?
+###4 What's Your Name?
 def print_full_name(first, last):
     print("Hello "+first+" "+last+"! You just delved into python.")
 if __name__ == '__main__':
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     print_full_name(first_name, last_name)
 
 
-#5 Mutations
+###5 Mutations
 def mutate_string(string, position, character):
     string=string[:position]+character+string[position+1:]
     return(string)
@@ -47,7 +47,7 @@ def mutate_string(string, position, character):
 
 
 
-#6 Find a string
+###6 Find a string
 def count_substring(string, sub_string):
     count = 0
     start = 0
@@ -67,7 +67,7 @@ def count_substring(string, sub_string):
     return count
 
 
-#7 String Validators
+###7 String Validators
 def check_string_properties(S):
   
     has_alphanumeric = any(char.isalnum() for char in S)
@@ -90,7 +90,7 @@ if __name__ == '__main__':
     check_string_properties(S)
 
 
-#8 Text Alignment
+###8 Text Alignment
 thickness = int(input())  # This must be an odd number
 c = 'H'
 
@@ -116,7 +116,7 @@ for i in range(thickness):
 
 
 
-#9 Text Wrap
+###9 Text Wrap
 import textwrap
 
 def wrap(string, max_width):
@@ -129,7 +129,7 @@ if __name__ == '__main__':
     print(result)
 
 
-#10 Designer Door Mat
+###10 Designer Door Mat
 # Input: N and M (space-separated)
 N, M = map(int, input().strip().split())
 
@@ -147,7 +147,7 @@ for i in range(N-2, 0, -2):
     print(pattern.center(M, '-'))
 
 
-#11 String Formatting
+###11 String Formatting
 def print_formatted(number):
   
     width = len(bin(number)) - 2  # '-2' to exclude the '0b' prefix
@@ -161,7 +161,7 @@ def print_formatted(number):
 
 
 
-#12 Alphabet Rangoli
+###12 Alphabet Rangoli
 import string
 
 def print_rangoli(size):
@@ -178,7 +178,7 @@ def print_rangoli(size):
 
 
 
-#13 The Minion Game
+###13 The Minion Game
 def minion_game(string):
     # Initialize scores
     kevin_score = 0
