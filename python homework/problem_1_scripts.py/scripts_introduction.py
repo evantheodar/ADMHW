@@ -1,12 +1,12 @@
 
 
-#1 Say "Hello, World!" With Python
+###1 Say "Hello, World!" With Python
 world = "Hello, World!"
 print(world)
 
 
 
-#2 Python If-Else
+###2 Python If-Else
 n = int(input())
 if n % 2 == 1:
     print("Weird")
@@ -19,7 +19,7 @@ else:
         print("Not Weird")
 
 
-#3 Arithmetic Operators
+###3 Arithmetic Operators
 a = int(input())
 b = int(input())
 print(a + b)
@@ -27,21 +27,21 @@ print(a - b)
 print(a * b)
 
 
-#4 Python: Division
+###4 Python: Division
 a = int(input())
 b = int(input())
 print(a//b)
 print(a/b)
 
 
-#5 Loops
+###5 Loops
 n = int(input())
 
 for i in range(n):
     print(i ** 2)
 
 
-# 6 Write a function
+### 6 Write a function
 def is_leap(n):
     leap = False
     if n%4==0:
@@ -55,7 +55,7 @@ def is_leap(n):
     return leap
 
 
-#7 Print Function
+###7 Print Function
 from __future__ import print_function
 
 N = int(input())
