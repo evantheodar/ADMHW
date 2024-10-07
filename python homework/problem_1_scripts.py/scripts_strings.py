@@ -1,6 +1,6 @@
 
 
-#1 Capitalize!
+# 1 Capitalize!
 ef solve(s):
     # Use the title() function to capitalize the first letter of each word
     capitalized_string = s.title()
