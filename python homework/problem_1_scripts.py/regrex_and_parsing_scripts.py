@@ -44,6 +44,24 @@ print(find_first_repeating_char(S))
 
 
 ###4 Re.findall() & Re.finditer()
+import re
+
+def find_vowel_substrings(s):
+    consonants = 'qwrtypsdfghjklzxcvbnmQWRTYPSDFGHJKLZXCVBNM'
+    vowels = 'aeiouAEIOU'
+    
+    pattern = r'(?<=[{}])[{}]{{2,}}(?=[{}])'.format(consonants, vowels, consonants)
+    
+    matches = re.findall(pattern, s)
+    
+    if matches:
+        for match in matches:
+            print(match)
+    else:
+        print(-1)
+
+S = input().strip()
+find_vowel_substrings(S)
 
 
 ###5 Re.start() & Re.end()
