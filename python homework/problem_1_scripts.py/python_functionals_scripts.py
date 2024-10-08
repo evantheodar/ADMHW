@@ -1,5 +1,5 @@
 
-# 1 Map and Lambda Function
+1. Map and Lambda Function
 # Function to generate the first N Fibonacci numbers
 def fibonacci(n):
     fib_seq = [0, 1]
