@@ -55,9 +55,47 @@ print(f"{average_marks:.2f}")
 
 
 ###4 Collections.OrderedDict()
+from collections import OrderedDict
+
+N = int(input())
+
+
+items = OrderedDict()
+
+for _ in range(N):
+    data = input().split()
+    itemname = ' '.join(data[:-1])  
+    net_price = int(data[-1]) 
+
+    if itemname in items:
+        items[itemname] += net_price
+    else:
+        items[itemname] = net_price
+
+for itemname, total_price in items.items():
+    print(itemname, total_price)
+
 
 
 ###5 Word Order
+from collections import OrderedDict
+
+n = int(input())
+
+word_count = OrderedDict()
+
+# Process each word
+for _ in range(n):
+    word = input().strip()  
+    if word in word_count:
+        word_count[word] += 1  
+    else:
+        word_count[word] = 1  
+
+print(len(word_count))
+
+print(' '.join(map(str, word_count.values())))
+
 
 
 ###6 Collections.deque()
