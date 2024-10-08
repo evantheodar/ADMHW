@@ -1,1 +1,9 @@
+def birthdayCakeCandles(candles):
+    # Find the tallest candle
+    tallest = max(candles)
+    return candles.count(tallest)
+
+n = int(input()) 
+candles = list(map(int, input().split()))  
+print(birthdayCakeCandles(candles))
 
