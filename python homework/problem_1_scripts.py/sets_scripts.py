@@ -1,5 +1,11 @@
 
 ###1 Introduction to Sets
+def average(arr):
+    distinct_heights = set(arr)
+
+    avg_height = sum(distinct_heights) / len(distinct_heights)
+    return round(avg_height, 3)
+
 
 
 ###2 No Idea!
@@ -19,6 +25,17 @@ print(happiness)
 
 
 ###3 Symmetric Difference
+if __name__ == '__main__':
+    m = int(input())
+    set_m = set(map(int, input().split()))
+
+    n = int(input())
+    set_n = set(map(int, input().split()))
+
+    symmetric_difference = set_m.symmetric_difference(set_n)
+
+    for value in sorted(symmetric_difference):
+        print(value)
 
 
 ###4 Set .add()
